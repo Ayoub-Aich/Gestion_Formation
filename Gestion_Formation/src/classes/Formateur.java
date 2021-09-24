@@ -6,7 +6,7 @@ public class Formateur {
 	private String prenom;
 	private String specialite;
 	private String grade;
-	private String[] grades = {"junior" ,"senior", "expert"};
+	public String[] grades = {"junior" ,"senior", "expert"};
 	
 	public String getNom() {
 		return nom;
@@ -46,6 +46,10 @@ public class Formateur {
 		this.setPrenom(prenom);
 		this.setSpecialite(specialite);
 		this.setGrade(grade);
+	}
+
+	public Formateur() {
+		super();
 	}
 
 }
