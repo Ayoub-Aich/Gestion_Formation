@@ -1,6 +1,5 @@
 package classes_lists;
 
-import classes.Candidat;
 import classes.Session;
 import java.util.ArrayList;
 

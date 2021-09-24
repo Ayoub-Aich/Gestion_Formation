@@ -1,6 +1,5 @@
 package classes_lists;
 
-import classes.Candidat;
 import classes.Formateur;
 import java.util.ArrayList;
 
