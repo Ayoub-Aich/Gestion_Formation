@@ -61,5 +61,10 @@ public class Session {
 	public Session() {
 		super();
 	}
+
+	@Override
+	public String toString() {
+		return "Session [debut=" + debut + ", fin=" + fin + ", titre_formation=" + titre_formation + ", lieu=" + lieu + ", mode=" + mode + "]";
+	}
 	
 }

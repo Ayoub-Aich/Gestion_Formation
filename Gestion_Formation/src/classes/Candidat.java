@@ -36,5 +36,10 @@ public class Candidat {
 		this.setName(name);
 		this.setDepartement(departement);
 	}
+
+	@Override
+	public String toString() {
+		return "Candidat [id=" + id + ", name=" + name + ", departement=" + departement + "]";
+	}
 	
 }

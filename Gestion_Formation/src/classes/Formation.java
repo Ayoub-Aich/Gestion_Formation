@@ -47,4 +47,9 @@ public class Formation {
 		this.setNb_heures(nb_heures);
 	}
 
+	@Override
+	public String toString() {
+		return "Formation [titre=" + titre + ", formateur=" + formateur + ", prix=" + prix + ", nb_heures=" + nb_heures + "]";
+	}
+
 }

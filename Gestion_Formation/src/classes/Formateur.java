@@ -52,4 +52,9 @@ public class Formateur {
 		super();
 	}
 
+	@Override
+	public String toString() {
+		return "Formateur [nom=" + nom + ", prenom=" + prenom + ", specialite=" + specialite + ", grade=" + grade + "]";
+	}
+
 }
