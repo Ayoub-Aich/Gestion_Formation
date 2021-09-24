@@ -29,5 +29,12 @@ public class Candidat {
 	public void setDepartement(String departement) {
 		this.departement = departement;
 	}
+
+	public Candidat(int id, String name, String departement) {
+		super();
+		this.setId(id);
+		this.setName(name);
+		this.setDepartement(departement);
+	}
 	
 }

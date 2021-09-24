@@ -38,7 +38,13 @@ public class Formation {
 	public void setNb_heures(int nb_heures) {
 		this.nb_heures = nb_heures;
 	}
-	
-	
+
+	public Formation(String titre, String formateur, int prix, int nb_heures) {
+		super();
+		this.setTitre(titre);
+		this.setFormateur(formateur);
+		this.setPrix(prix);
+		this.setNb_heures(nb_heures);
+	}
 
 }

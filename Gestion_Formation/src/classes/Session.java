@@ -7,6 +7,7 @@ public class Session {
 	private String titre_formation;
 	private String lieu;
 	private String mode;
+	private String[] modes = {"présentiel", "en ligne"};
 	
 	public String getDebut() {
 		return debut;
@@ -47,7 +48,14 @@ public class Session {
 	public void setMode(String mode) {
 		this.mode = mode;
 	}
-	
-	
+
+	public Session(String debut, String fin, String titre_formation, String lieu, String mode) {
+		super();
+		this.setDebut(debut);
+		this.setFin(fin);
+		this.setTitre_formation(titre_formation);
+		this.setLieu(lieu);
+		this.setMode(mode);
+	}
 	
 }
