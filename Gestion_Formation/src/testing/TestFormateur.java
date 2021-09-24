@@ -39,6 +39,7 @@ public class TestFormateur {
 	@Test
 	public void testGrade()
 	{
+		assertFalse(vf.VerifGrade("pro"));
 		assertTrue(vf.VerifGrade("junior"));	
 	}
 	

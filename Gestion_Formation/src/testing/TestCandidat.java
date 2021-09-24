@@ -21,7 +21,9 @@ public class TestCandidat {
 	@Test
 	public void testId()
 	{
-		assertTrue(vc.VerifId(4));	
+		assertFalse(vc.VerifId(0));	
+		assertFalse(vc.VerifId(-3));	
+		assertTrue(vc.VerifId(10));	
 	}
 	
 	@Test

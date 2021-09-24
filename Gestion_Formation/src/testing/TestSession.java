@@ -37,6 +37,7 @@ public class TestSession {
 	@Test
 	public void testMode()
 	{
+		assertFalse(vs.VerifMode("sur place"));
 		assertTrue(vs.VerifMode("en ligne"));	
 	}
 	
