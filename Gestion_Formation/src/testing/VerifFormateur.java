@@ -27,7 +27,7 @@ public class VerifFormateur {
 		return false;
 	}
 	
-	public boolean VerifMode (String grade) {
+	public boolean VerifGrade (String grade) {
 		Formateur form = new Formateur();
 		for (int i = 0; i < form.grades.length; i++) {
 		    if(grade.matches(form.grades[i])) {
