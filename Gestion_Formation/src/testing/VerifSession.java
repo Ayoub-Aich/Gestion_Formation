@@ -1,13 +1,33 @@
 package testing;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import classes.Session;
 
 public class VerifSession {
 
-	VerifGenerale vg;
+	VerifGenerale vg = new VerifGenerale();
 	
 	public boolean VerifDates (String debut, String fin) {
-		if(debut.matches("^\\d{2}/\\d{2}/\\d{4}\\s\\d{2}:\\d{2}:\\d{2}$") && fin.matches("^\\d{2}/\\d{2}/\\d{4}\\s\\d{2}:\\d{2}:\\d{2}$") && debut.compareTo(fin) < 0) {
+		
+		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:SS");
+		String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
+		
+		try{
+		    format.parse(debut);
+		}catch(ParseException e){
+		    return false;
+		}
+		
+		try{
+		    format.parse(fin);
+		}catch(ParseException e){
+		    return false;
+		}
+		
+		if(debut.compareTo(fin) < 0 && fin.compareTo(timeStamp) < 0) {
 			return true;
 		}
 		return false;

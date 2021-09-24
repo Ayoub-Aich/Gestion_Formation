@@ -2,7 +2,7 @@ package testing;
 
 public class VerifCandidat {
 	
-	VerifGenerale vg;
+	public VerifGenerale vg = new VerifGenerale();
 
 	public boolean VerifId (int id) {
 		if(id > 0) {

@@ -3,18 +3,16 @@ package testing;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 
 public class TestFormation {
 
-	@Rule
 	public VerifFormation vf;
 	
 	@Before
 	public void beforeCoding()
 	{
-		vf = new VerifFormation();
+		this.vf = new VerifFormation();
 	}
 	
 	//////////////////////////////////////

@@ -4,7 +4,7 @@ import classes.Formateur;
 
 public class VerifFormateur {
 
-	VerifGenerale vg;
+	public VerifGenerale vg = new VerifGenerale();
 	
 	public boolean VerifNom(String nom) {
 		if(vg.VerifAlpha(nom)) {

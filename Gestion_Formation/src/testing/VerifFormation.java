@@ -2,17 +2,17 @@ package testing;
 
 public class VerifFormation {
 	
-	VerifGenerale vg;
+	public VerifGenerale vg = new VerifGenerale();
 	
 	public boolean VerifTitre (String titre) {
-		if(titre.matches("[a-zA-Z0-9]3+")) {
+		if(titre.matches("[a-zA-Z0-9][a-zA-Z0-9][a-zA-Z0-9]+")) {
 			return true;
 		}
 		return false;
 	}
 	
 	public boolean VerifFormateur (String form) {
-		if(vg.VerifAlpha(form)) {
+		if(form.matches("[a-zA-Z0-9]+\\s[a-zA-Z0-9]+")) {
 			return true;
 		}
 		return false;

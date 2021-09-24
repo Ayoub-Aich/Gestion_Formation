@@ -3,18 +3,16 @@ package testing;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 
 public class TestGenerale {
 
-	@Rule
 	public VerifGenerale vg;
 	
 	@Before
 	public void beforeCoding()
 	{
-		vg = new VerifGenerale();
+		this.vg = new VerifGenerale();
 	}
 	
 	//////////////////////////////////////
@@ -29,7 +27,7 @@ public class TestGenerale {
 	@Test
 	public void testAlphaNum()
 	{
-		assertTrue(vg.VerifAlphaNum("Ayoub1994"));	
+		assertTrue(vg.VerifAlphaNum("Ayoub 1994"));
 	}
 	
 	//////////////////////////////////////
